@@ -10,7 +10,7 @@ import './index.css'
 
 console.log(import.meta.env)
 
-const a = { a: 1 }
+const a = { a: 2 }
 console.log(a)
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
