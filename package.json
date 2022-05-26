@@ -8,7 +8,8 @@
     "pre": "vite --mode pre",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "precommit": "echo 'success'"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
