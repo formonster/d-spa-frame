@@ -19,4 +19,7 @@
 - [swr](https://www.npmjs.com/package/swr)
 - [ahooks](https://ahooks.js.org/zh-CN/hooks/use-request/index)
 - [husky](https://typicode.github.io/husky/#/)
-- [commitlint](https://commitlint.js.org/#/reference-cli)
+- [commitlint](https://commitlint.js.org/#/reference-cli)：规范 git commit 信息
+- [prettier](https://www.prettier.cn/docs//install.html)：用于检查代码格式
+- [stylelint](https://github.com/prettier/stylelint-config-prettier)：用于检查 css 代码格式
+- [lint-staged](https://www.npmjs.com/package/lint-staged)：对暂存的 git 文件运行 linter，不要让 💩 溜进你的代码库！

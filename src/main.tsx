@@ -10,15 +10,16 @@ import './index.css'
 
 console.log(import.meta.env)
 
-const a = {a:1}
+const a = { a: 1 }
+console.log(a)
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home />} />
-          {routes.map(route => {
+          <Route path="/" element={<Home />} />
+          {routes.map((route) => {
             const Element = lazyComponent(route.element)
             return <Route key={route.path} {...route} element={<Element />} />
           })}

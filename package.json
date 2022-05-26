@@ -8,8 +8,7 @@
     "pre": "vite --mode pre",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "prepare": "husky install",
-    "precommit": "echo 'success'"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
@@ -36,6 +35,7 @@
     "eslint-config-react-app": "^7.0.1",
     "husky": "^8.0.0",
     "less": "^4.1.2",
+    "lint-staged": "^12.4.2",
     "postcss": "^8.4.14",
     "prettier": "^2.6.2",
     "redux-devtools": "^3.7.0",
@@ -47,6 +47,9 @@
     "vite-plugin-style-import": "^2.0.0"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "**/*": "prettier --write --ignore-unknown",
+    "*.js": "eslint --cache --fix",
+    "*.css": "stylelint --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }

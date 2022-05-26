@@ -9,3 +9,5 @@ do
     exit 1 # exit with failure status
   fi
 done
+npx lint-staged
+npx lint-staged
