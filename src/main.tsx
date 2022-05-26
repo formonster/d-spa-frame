@@ -10,6 +10,8 @@ import './index.css'
 
 console.log(import.meta.env)
 
+const a = {a:1}
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Provider store={store}>
