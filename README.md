@@ -10,3 +10,12 @@
 - ahooks
 - tailwindcss
   - 现存问题：tailwindcss 会覆盖 antd 的基础样式
+
+
+## Docs
+
+- [tailwindcss](https://www.tailwindcss.cn/docs)
+- [swr](https://www.npmjs.com/package/swr)
+- [ahooks](https://ahooks.js.org/zh-CN/hooks/use-request/index)
+- [husky](https://typicode.github.io/husky/#/)
+- [commitlint](https://commitlint.js.org/#/reference-cli)

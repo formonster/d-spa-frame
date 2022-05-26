@@ -1,0 +1,8 @@
+{
+  "extends": "react-app",
+  // https://eslint.org/docs/rules
+  "rules": {
+    "semi": ["error", "never"],
+    "quotes": ["error", "single"]
+  }
+}
