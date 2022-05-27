@@ -18,9 +18,9 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@": resolve(__dirname, 'src'),
+      '@': resolve(__dirname, 'src'),
     },
-    extensions: ['.ts', '.tsx', '.json', '.js', '.jsx']
+    extensions: ['.ts', '.tsx', '.json', '.js', '.jsx'],
   },
   plugins: [
     react(),
@@ -31,7 +31,7 @@ export default defineConfig({
           libraryName: 'antd',
           esModule: true,
           resolveStyle: (name) => {
-            return `antd/es/${name}/style/index.js`;
+            return `antd/es/${name}/style/index.js`
           },
         },
       ],
@@ -48,11 +48,11 @@ export default defineConfig({
             dark: true,
             // compact: true
           }),
-          "primary-color": "#1DA57A",
-          "link-color": "#1DA57A",
-          "border-radius-base": "2px",
+          'primary-color': '#1DA57A',
+          'link-color': '#1DA57A',
+          'border-radius-base': '2px',
         },
       },
-    }
+    },
   },
 })

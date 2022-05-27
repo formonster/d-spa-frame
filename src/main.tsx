@@ -5,13 +5,11 @@ import Home from './pages/home'
 import routes from './routes'
 import lazyComponent from '@/components/LazyComponent'
 import { store } from '@/store'
+import Popup from '@/features/popup'
 import { Provider } from 'react-redux'
-import './index.css'
+import './index.less'
 
 console.log(import.meta.env)
-
-const a = { a: 2 }
-console.log(a)
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -25,6 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           })}
         </Routes>
       </BrowserRouter>
+      <Popup />
     </Provider>
   </React.StrictMode>
 )
