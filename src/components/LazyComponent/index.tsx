@@ -21,7 +21,9 @@ class LazyComponent extends Component<{
   }
 }
 
-export default (child: () => Promise<{ default: ComponentType<any> }>) => {
+const createLazyComponent = (
+  child: () => Promise<{ default: ComponentType<any> }>
+) => {
   const Child = lazy(child)
   return () => (
     <LazyComponent>
@@ -29,3 +31,5 @@ export default (child: () => Promise<{ default: ComponentType<any> }>) => {
     </LazyComponent>
   )
 }
+
+export default createLazyComponent

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Button, Input } from 'antd'
+import { Button } from 'antd'
 import { Link } from 'react-router-dom'
 import Counter from '@/features/counter'
 import { usePopupCtl } from '@/features/popup/index.store'
