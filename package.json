@@ -6,6 +6,8 @@
     "dev": "vite --mode dev",
     "test": "vite --mode test",
     "pre": "vite --mode pre",
+    "build:test": "tsc && vite build --mode test",
+    "build:pre": "tsc && vite build --mode pre",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky install"
@@ -24,6 +26,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.1",
     "@commitlint/config-conventional": "^17.0.0",
+    "@redux-devtools/core": "^3.12.0",
     "@types/node": "^17.0.35",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
@@ -38,7 +41,6 @@
     "lint-staged": "^12.4.2",
     "postcss": "^8.4.14",
     "prettier": "^2.6.2",
-    "redux-devtools": "^3.7.0",
     "stylelint": "^14.8.5",
     "stylelint-config-prettier": "^9.0.3",
     "tailwindcss": "^3.0.24",
