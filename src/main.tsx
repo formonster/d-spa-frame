@@ -9,14 +9,14 @@ import Popup from '@/features/popup'
 import { Provider } from 'react-redux'
 import './index.less'
 
-console.log(import.meta.env)
+console.log('ENV', import.meta.env)
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path='/' element={<Home />} />
           {routes.map((route) => {
             const Element = lazyComponent(route.element)
             return <Route key={route.path} {...route} element={<Element />} />
